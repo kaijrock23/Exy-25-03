@@ -29,7 +29,7 @@
         const select = document.getElementById('cats-el');
 
         const response = await fetch('https://cataas.com/api/tags')
-        const data = response.json()
+        const data = await response.json()
         
         const tagList1 = data.slice(4, 9);
         const tagList2 = data.slice(14, 19);
