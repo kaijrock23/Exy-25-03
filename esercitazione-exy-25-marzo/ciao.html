@@ -43,7 +43,7 @@
 
             select.addEventListener('change', async() => {
               const response = await fetch(`https://cataas.com/cat/${select.value}?json=true`)
-              const respone2 = response.json()
+              const respone2 = await response.json()
             })
         })
     }
